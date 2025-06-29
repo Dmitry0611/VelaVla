@@ -1,0 +1,76 @@
+.intelligence {
+    .container {
+        h2 {
+
+        }
+        .intelligence_section_inner {
+            .section_inner_first {
+                .first_flex {
+                    img {
+
+                    }
+                    .first_info_text {
+
+                    }
+                }
+            }
+            .section_inner_second {
+                .second_flex {
+                    img {
+
+                    }
+                    .second_info_text {
+
+                    }
+                }
+            }
+            .section_inner_third {
+                .third_flex {
+                    img {
+
+                    }
+                    .third_info_text {
+
+                    }
+                }
+            }
+            .section_inner_fourth {
+                .fourth_flex {
+                    img {
+
+                    }
+                    .fourth_info_text {
+
+                    }
+                }
+            }
+        }
+        .intelligence_button {
+            button {
+                width: 479px;
+                height: 60px;
+                font-size: 12px;
+                color: white;
+                text-transform: uppercase;
+                font-weight: 700;
+                letter-spacing: 2.5px;
+                background: linear-gradient(
+                    180deg,
+                    #03E1FF 66%,
+                    #13CDC2 100%
+                );
+                box-shadow: 7px 0px 20px -7px #00E0FF;
+                border: none;
+                border-radius: 8px;
+                cursor: pointer;
+                transition: all 1s;
+
+                &:hover {
+                    transition: all 1s;
+                    transform: translateY(-5px);
+                    box-shadow: 10px 0px 30px -5px #00E0FF;
+                }
+            }
+        }
+    }
+}
