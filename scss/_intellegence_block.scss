@@ -1,21 +1,73 @@
 .intelligence {
+    background-image: url('../images/intelligence_background.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 913px;
+    padding-top: 117px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(to right, #00E0FF, #4AD9EC, #00E0FF);
+            box-shadow:
+                0 3px 15px rgba(0, 224, 255, 0.93),
+                0 4px 15px rgba(74, 217, 236, 1),
+                0 0px 24px rgba(0, 224, 255, 1);
+            pointer-events: none;
+            filter: blur(2px);
+        }
+
     .container {
         h2 {
+            text-transform: uppercase;
+            font-size: 54px;
+            font-weight: 500;
+            color: white;
 
+            span {
+                color: turquoise;
+                text-transform: uppercase;
+                font-size: 54px;
+                font-weight: 500;
+            }
         }
         .intelligence_section_inner {
+            padding-top: 64px;
             .section_inner_first {
+                height: 61px;
+                background: linear-gradient(to right,
+                rgba(31, 63, 77, 0.3) 0%,
+                rgba(31, 63, 77, 0.3) 54%,
+                rgba(31, 75, 94, 0) 100%);
                 .first_flex {
+                    display: flex;
                     img {
-
+                        padding-top: 12px;
+                        padding-left: 24px;
+                    }
+                    .ellipse {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
                     }
                     .first_info_text {
-
+                        position: relative;
+                        padding-top: 20px;
+                        padding-left: 19px;
+                        color: white;
+                        font-size: 15px;
+                        font-weight: 500;
                     }
                 }
             }
             .section_inner_second {
                 .second_flex {
+                    display: flex;
                     img {
 
                     }
@@ -26,6 +78,7 @@
             }
             .section_inner_third {
                 .third_flex {
+                    display: flex;
                     img {
 
                     }
@@ -36,6 +89,7 @@
             }
             .section_inner_fourth {
                 .fourth_flex {
+                    display: flex;
                     img {
 
                     }
