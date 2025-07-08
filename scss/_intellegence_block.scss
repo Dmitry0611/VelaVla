@@ -45,56 +45,112 @@
                 rgba(31, 63, 77, 0.3) 54%,
                 rgba(31, 75, 94, 0) 100%);
                 .first_flex {
+                    position: relative;
                     display: flex;
-                    img {
-                        padding-top: 12px;
-                        padding-left: 24px;
-                    }
-                    .ellipse {
-                        position: absolute;
-                        top: 0;
-                        left: 0;
+                    .checked {
+                        margin-top: 12px;
+                        margin-left: 24px;
+                        width: 33px;
+                        height: 33px;
                     }
                     .first_info_text {
-                        position: relative;
                         padding-top: 20px;
                         padding-left: 19px;
                         color: white;
                         font-size: 15px;
                         font-weight: 500;
                     }
+                    .ellipse {
+                        position: absolute;
+                        top: 14px;
+                        left: 56px;
+                    }
                 }
             }
             .section_inner_second {
+                margin-top: 10px;
+                background: linear-gradient(to right,
+                rgba(31, 63, 77, 0.3) 0%,
+                rgba(31, 63, 77, 0.3) 54%,
+                rgba(31, 75, 94, 0) 100%);
                 .second_flex {
+                    position: relative;
                     display: flex;
-                    img {
-
+                    .checked  {
+                        width: 33px;
+                        height: 33px;
+                        margin-top: 12px;
+                        margin-left: 24px;
                     }
                     .second_info_text {
-
+                        padding-top: 20px;
+                        padding-left: 19px;
+                        color: white;
+                        font-size: 15px;
+                        font-weight: 500;
+                    }
+                    .ellipse {
+                        position: absolute;
+                        top: 14px;
+                        left: 56px;
                     }
                 }
             }
             .section_inner_third {
+                margin-top: 10px;
+                background: linear-gradient(to right,
+                rgba(31, 63, 77, 0.3) 0%,
+                rgba(31, 63, 77, 0.3) 54%,
+                rgba(31, 75, 94, 0) 100%);
                 .third_flex {
+                    position: relative;
                     display: flex;
-                    img {
-
+                    .checked {
+                        width: 33px;
+                        height: 33px;
+                        margin-top: 12px;
+                        margin-left: 24px;
                     }
                     .third_info_text {
-
+                        padding-top: 20px;
+                        padding-left: 19px;
+                        color: white;
+                        font-size: 15px;
+                        font-weight: 500;
+                    }
+                    .ellipse {
+                        position: absolute;
+                        top: 14px;
+                        left: 56px;
                     }
                 }
             }
             .section_inner_fourth {
+                margin-top: 10px;
+                background: linear-gradient(to right,
+                rgba(31, 63, 77, 0.3) 0%,
+                rgba(31, 63, 77, 0.3) 54%,
+                rgba(31, 75, 94, 0) 100%);
                 .fourth_flex {
+                    position: relative;
                     display: flex;
-                    img {
-
+                    .checked  {
+                        width: 33px;
+                        height: 33px;
+                        margin-top: 12px;
+                        margin-left: 24px;
                     }
                     .fourth_info_text {
-
+                        padding-top: 20px;
+                        padding-left: 19px;
+                        color: white;
+                        font-size: 15px;
+                        font-weight: 500;
+                    }
+                    .ellipse {
+                        position: absolute;
+                        top: 14px;
+                        left: 56px;
                     }
                 }
             }
