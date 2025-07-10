@@ -6,8 +6,8 @@
     height: 913px;
     padding-top: 117px;
 
-        &::before {
-            content: '';
+        &::after{
+            content: "";
             position: absolute;
             top: 0;
             left: 0;
@@ -68,6 +68,7 @@
                 }
             }
             .section_inner_second {
+                height: 118px;
                 margin-top: 10px;
                 background: linear-gradient(to right,
                 rgba(31, 63, 77, 0.3) 0%,
@@ -97,6 +98,7 @@
                 }
             }
             .section_inner_third {
+                height: 94px;
                 margin-top: 10px;
                 background: linear-gradient(to right,
                 rgba(31, 63, 77, 0.3) 0%,
@@ -126,6 +128,7 @@
                 }
             }
             .section_inner_fourth {
+                height: 80px;
                 margin-top: 10px;
                 background: linear-gradient(to right,
                 rgba(31, 63, 77, 0.3) 0%,
@@ -157,6 +160,7 @@
         }
         .intelligence_button {
             button {
+                margin-top: 69px;
                 width: 479px;
                 height: 60px;
                 font-size: 12px;
