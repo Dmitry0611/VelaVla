@@ -1,0 +1,73 @@
+
+@mixin mainButton {
+    width: 479px;
+    height: 60px;
+    font-size: 12px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    background: linear-gradient(
+            180deg,
+            #03E1FF 66%,
+            #13CDC2 100%
+        );
+    box-shadow: 7px 0px 20px -7px #00E0FF;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 1s;
+
+    &:hover {
+        transition: all 1s;
+        transform: translateY(-5px);
+        box-shadow: 10px 0px 30px -5px #00E0FF;
+    }
+}
+@mixin intelligenceText {
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 21px;
+}
+@mixin reasonsText {
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+}
+@mixin importantText {
+    color: white;
+    line-height: 23px;
+    font-weight: 500;
+    font-size: 16px;
+}
+@mixin learningText {
+    color: white;
+    line-height: 23px;
+    font-weight: 500;
+    font-size: 16px;
+}
+@mixin coursesNumber {
+    display: block;
+    width: 27px;
+    height: 27px;
+    text-align: center;
+    padding-top: 5px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #08262B;
+    background-color: #4ABCEC;
+}
+@mixin coursesTitle {
+    font-weight: 700;
+    color: #4ABCEC;
+    font-size: 16px;
+}
+@mixin coursesText {
+    margin-top: 14px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 21px;
+    color: $white;
+}

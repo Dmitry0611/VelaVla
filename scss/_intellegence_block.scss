@@ -3,18 +3,18 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 913px;
     padding-top: 117px;
+    padding-bottom: 109px;
 
     .container {
         h2 {
             text-transform: uppercase;
             font-size: 54px;
             font-weight: 500;
-            color: white;
+            color: $white;
 
             span {
-                color: turquoise;
+                color: $turquoise;
                 text-transform: uppercase;
                 font-size: 54px;
                 font-weight: 500;
@@ -40,9 +40,7 @@
                     .first_info_text {
                         padding-top: 20px;
                         padding-left: 19px;
-                        color: white;
-                        font-size: 15px;
-                        font-weight: 500;
+                        @include intelligenceText;
                     }
                     .ellipse {
                         position: absolute;
@@ -70,9 +68,7 @@
                     .second_info_text {
                         padding-top: 20px;
                         padding-left: 19px;
-                        color: white;
-                        font-size: 15px;
-                        font-weight: 500;
+                        @include intelligenceText;
                     }
                     .ellipse {
                         position: absolute;
@@ -100,9 +96,7 @@
                     .third_info_text {
                         padding-top: 20px;
                         padding-left: 19px;
-                        color: white;
-                        font-size: 15px;
-                        font-weight: 500;
+                        @include intelligenceText;
                     }
                     .ellipse {
                         position: absolute;
@@ -130,9 +124,7 @@
                     .fourth_info_text {
                         padding-top: 20px;
                         padding-left: 19px;
-                        color: white;
-                        font-size: 15px;
-                        font-weight: 500;
+                        @include intelligenceText;
                     }
                     .ellipse {
                         position: absolute;
@@ -145,29 +137,7 @@
         .intelligence_button {
             button {
                 margin-top: 69px;
-                width: 479px;
-                height: 60px;
-                font-size: 12px;
-                color: white;
-                text-transform: uppercase;
-                font-weight: 700;
-                letter-spacing: 2.5px;
-                background: linear-gradient(
-                    180deg,
-                    #03E1FF 66%,
-                    #13CDC2 100%
-                );
-                box-shadow: 7px 0px 20px -7px #00E0FF;
-                border: none;
-                border-radius: 8px;
-                cursor: pointer;
-                transition: all 1s;
-
-                &:hover {
-                    transition: all 1s;
-                    transform: translateY(-5px);
-                    box-shadow: 10px 0px 30px -5px #00E0FF;
-                }
+                @include mainButton;
             }
         }
     }

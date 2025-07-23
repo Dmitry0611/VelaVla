@@ -1,0 +1,387 @@
+.courses {
+    position: relative;
+    background: linear-gradient(to right, #022335 0%, #0C373D 100%);
+    padding-top: 105px;
+    padding-bottom: 109px;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background: linear-gradient(to right, #00E0FF, #4AD9EC, #00E0FF);
+        box-shadow:
+            0 3px 15px rgba(0, 224, 255, 0.93),
+            0 4px 15px rgba(74, 217, 236, 1),
+            0 0px 24px rgba(0, 224, 255, 1);
+        pointer-events: none;
+        filter: blur(2px);
+    }
+    .container {
+        h2 {
+            text-transform: uppercase;
+            font-size: 54px;
+            font-weight: 500;
+            color: white;
+
+            span {
+                color: turquoise;
+                text-transform: uppercase;
+                font-size: 54px;
+                font-weight: 500;
+            }
+        }
+        .small_title {
+            margin-top: 30px;
+            font-size: 16px;
+            font-weight: 500;
+            color: #ffff;
+        }
+        .junior_level {
+            .junior_level_title {
+                display: flex;
+                align-items: center;
+                background: linear-gradient(180deg, #073447 0%, #08262B 100%);
+                border-radius: 10px;
+                height: 56px;
+                margin-top: 27px;
+                img {
+                    padding-top: 8px;
+                    padding-left: 16px;
+                }
+                h3 {
+                    margin-left: 16px;
+                    margin-right: 10px;
+                    font-weight: 700;
+                    font-size: 20px;
+                    color: #ffff;
+                }
+                span {
+                    font-size: 16px;
+                    color: #08B1B9;
+                    font-weight: 500;
+                }
+                button {
+                    background-color: transparent;
+                    border: none;
+                    margin-bottom: 6px;
+                    margin-left: auto;
+                    margin-right: 15px
+                }
+            }
+            .inner_sections {
+
+                .first_section {
+                    display: flex;
+                    margin-top: 34px;
+                    .first_section_left {
+                        span {
+                            @include coursesNumber;
+                        }
+                    }
+                    .first_section_right {
+                        padding-top: 4px;
+                        padding-left: 16px;
+                        .inner_title {
+                            @include coursesTitle;
+                        }
+                        .inner_text {
+                            @include coursesText;
+                        }
+                    }
+                }
+                .second_section {
+                    display: flex;
+                    margin-top: 40px;
+                    .second_section_left {
+                        span {
+                            @include coursesNumber;
+                        }
+                    }
+                    .second_section_right {
+                        padding-top: 4px;
+                        padding-left: 16px;
+                        .inner_title {
+                            @include coursesTitle;
+                        }
+                        .inner_text {
+                            @include coursesText;
+                        }
+                    }
+                }
+                .third_section {
+                    display: flex;
+                    margin-top: 40px;
+                    .third_section_left {
+                        span {
+                            @include coursesNumber;
+                        }
+                    }
+                    .third_section_right {
+                        padding-top: 4px;
+                        padding-left: 16px;
+                        .inner_title {
+                            @include coursesTitle;
+                        }
+                        .inner_text {
+                            @include coursesText;
+                        }
+                    }
+                }
+                .fourth_section {
+                    display: flex;
+                    margin-top: 40px;
+                    .fourth_section_left {
+                        span {
+                            @include coursesNumber;
+                        }
+                    }
+                    .fourth_section_right {
+                        padding-top: 4px;
+                        padding-left: 16px;
+                        .inner_title {
+                            @include coursesTitle;
+                        }
+                        .inner_text {
+                            @include coursesText;
+                        }
+                    }
+                }
+                .fifth_section {
+                    display: flex;
+                    margin-top: 40px;
+                    .fifth_section_left {
+                        span {
+                            @include coursesNumber;
+                        }
+                    }
+                    .fifth_section_right {
+                        padding-top: 4px;
+                        padding-left: 16px;
+                        .inner_title {
+                            @include coursesTitle;
+                        }
+                        .inner_text {
+                            @include coursesText;
+                        }
+                    }
+                }
+                .sixth_section {
+                    display: flex;
+                    margin-top: 40px;
+                    .sixth_section_left {
+                        span {
+                            @include coursesNumber;
+                        }
+                    }
+                    .sixth_section_right {
+                        padding-top: 4px;
+                        padding-left: 16px;
+                        .inner_title {
+                            @include coursesTitle;
+                        }
+                        .inner_text {
+                            @include coursesText;
+                        }
+                    }
+                }
+                .seventh_section {
+                    display: flex;
+                    margin-top: 40px;
+                    .seventh_section_left {
+                        span {
+                            @include coursesNumber;
+                        }
+                    }
+                    .seventh_section_right {
+                        padding-top: 4px;
+                        padding-left: 16px;
+                        .inner_title {
+                            @include coursesTitle;
+                        }
+                        .inner_text {
+                            @include coursesText;
+                        }
+                    }
+                }
+                .eighth_section {
+                    display: flex;
+                    margin-top: 40px;
+                    .eighth_section_left {
+                        span {
+                            @include coursesNumber;
+                        }
+                    }
+                    .eighth_section_right {
+                        padding-top: 4px;
+                        padding-left: 16px;
+                        .inner_title {
+                            @include coursesTitle;
+                        }
+                        .inner_text {
+                            @include coursesText;
+                        }
+                    }
+                }
+                .ninth_section {
+                    display: flex;
+                    margin-top: 40px;
+                    .ninth_section_left {
+                        span {
+                            @include coursesNumber;
+                        }
+                    }
+                    .ninth_section_right {
+                        padding-top: 4px;
+                        padding-left: 16px;
+                        .inner_title {
+                            @include coursesTitle;
+                        }
+                        .inner_text {
+                            @include coursesText;
+                        }
+                    }
+                }
+                .tenth_section {
+                    display: flex;
+                    margin-top: 40px;
+                    .tenth_section_left {
+                        span {
+                            @include coursesNumber;
+                        }
+                    }
+                    .tenth_section_right {
+                        padding-top: 4px;
+                        padding-left: 16px;
+                        .inner_title {
+                            @include coursesTitle;
+                        }
+                        .inner_text {
+                            @include coursesText;
+                        }
+                    }
+                }
+                .eleven_section {
+                    display: flex;
+                    margin-top: 40px;
+                    .eleventh_section_left {
+                        span {
+                            @include coursesNumber;
+                        }
+                    }
+                    .eleventh_section_right {
+                        padding-top: 4px;
+                        padding-left: 16px;
+                        .inner_title {
+                            @include coursesTitle;
+                        }
+                        .inner_text {
+                            @include coursesText;
+                        }
+                    }
+                }
+            }
+        }
+        .senior_level {
+            margin-top: 40px;
+            .senior_level_title {
+                display: flex;
+                align-items: center;
+                background: linear-gradient(180deg, #073447 0%, #08262B 100%);
+                border-radius: 10px;
+                height: 56px;
+
+                img {
+                    padding-top: 8px;
+                    padding-left: 16px;
+                }
+                h3 {
+                    margin-left: 16px;
+                    margin-right: 10px;
+                    font-weight: 700;
+                    font-size: 20px;
+                    color: #ffff;
+                }
+                span {
+                    font-size: 16px;
+                    color: #08B1B9;
+                    font-weight: 500;
+                }
+                p {
+                    width: 102px;
+                    height: 21px;
+                    font-weight: 500;
+                    font-size: 13px;
+                    color: #08262B;
+                    background-color: #00E0FF;
+                    text-transform: uppercase;
+                    padding-top: 3px;
+                    padding-left: 4px;
+                    margin-left: 15px;
+                }
+                button {
+                    background-color: transparent;
+                    border: none;
+                    margin-bottom: 6px;
+                    margin-left: auto;
+                    margin-right: 15px
+                }
+            }
+        }
+        .senior2_level {
+            margin-top: 18px;
+            .senior2_level_title {
+                display: flex;
+                align-items: center;
+                background: linear-gradient(180deg, #073447 0%, #08262B 100%);
+                border-radius: 10px;
+                height: 56px;
+
+                img {
+                    padding-top: 8px;
+                    padding-left: 16px;
+                }
+                h3 {
+                    margin-left: 16px;
+                    margin-right: 10px;
+                    font-weight: 700;
+                    font-size: 20px;
+                    color: #ffff;
+                }
+                span {
+                    font-size: 16px;
+                    color: #08B1B9;
+                    font-weight: 500;
+                }
+                p {
+                    width: 102px;
+                    height: 21px;
+                    font-weight: 500;
+                    font-size: 13px;
+                    color: #08262B;
+                    background-color: #00E0FF;
+                    text-transform: uppercase;
+                    padding-top: 3px;
+                    padding-left: 4px;
+                    margin-left: 15px;
+                }
+                button {
+                    background-color: transparent;
+                    border: none;
+                    margin-bottom: 6px;
+                    margin-left: auto;
+                    margin-right: 15px
+                }
+            }
+        }
+        .courses_button {
+            margin-top: 59px;
+
+            button {
+                @include mainButton;
+            }
+        }
+    }
+}
