@@ -7,6 +7,7 @@
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 2.5px;
+    border-radius: 8px;
     background: linear-gradient(
             180deg,
             #03E1FF 66%,
@@ -14,7 +15,6 @@
         );
     box-shadow: 7px 0px 20px -7px #00E0FF;
     border: none;
-    border-radius: 8px;
     cursor: pointer;
     transition: all 1s;
 
@@ -70,4 +70,19 @@
     font-weight: 500;
     line-height: 21px;
     color: $white;
+}
+@mixin sliderButton {
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    background-color: #08262B;
+    border: none;
+    cursor: pointer;
+    transition: all 2s;
+
+    &:hover {
+        transition: all 2s;
+        background-color: #00E0FF;
+        box-shadow: 10px 0px 30px -5px #00E0FF;
+    }
 }
