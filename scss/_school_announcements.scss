@@ -69,15 +69,23 @@
             .slider_window {
                 overflow: hidden;
                 width: 100%;
+                max-width: 1200px;
                 position: relative;
+                box-sizing: border-box;
                 .cards_container {
                     display: flex;
-                    justify-content: space-between;
+                    max-width: 1200px;
                     transition: transform 0.5s ease;
                     will-change: transform;
                 .card {
                     position: relative;
                     width: 387px;
+                    flex: 0 0 387px;
+                    margin-right: 20px;
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
 
                     img {
                         margin-right: 7px;
