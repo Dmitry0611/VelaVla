@@ -1,0 +1,78 @@
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1000;
+    background: rgba(8, 38, 43, 0.5);
+
+
+    .modal_dialog {
+        margin: 150px auto;
+        width: 500px;
+        height: 500px;
+        border-radius: 20px;
+        background: linear-gradient(to left, #033958 0%, #0F6B78 100%);
+
+        .modal_content {
+            padding: 33px 0 0 28px;
+            position: relative;
+
+            .modal_close {
+                position: absolute;
+                top: -39px;
+                right: 0;
+                cursor: pointer;
+            }
+            .header_form {
+                font-size: 22px;
+                color: $white;
+                text-transform: uppercase;
+                font-weight: 500;
+                span {
+                    color: $turquoise;
+                }
+            }
+            .modal_form {
+                margin-top: 25px;
+
+                .group_name {
+                    .label_name {
+                        display: block;
+                        font-weight: 500;
+                        font-size: 13px;
+                        color: $labelForm;
+                        letter-spacing: 1.3px;
+                    }
+                    .gradient {
+                        display: inline-block;
+                        padding: 2px;
+                        border-radius: 9px;
+                        background: linear-gradient(to right, #1F4D60 43%, #49B9E8 100%);
+
+                        .input_name {
+                            width: 243px;
+                            height: 56px;
+                            border: none;
+                            border-radius: 7px;
+                            padding: 10px 15px;
+                            font-size: 16px;
+                            outline: none;
+                            color: #000;
+                            background: linear-gradient(
+                                to left,
+                                rgba(3, 57, 88, 0.6) 0%,
+                                rgba(15, 107, 120, 0.6) 100%
+                            );
+
+                            box-sizing: border-box;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

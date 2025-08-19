@@ -644,15 +644,34 @@
     </footer>
 
 
-    <!--Modal-->
+    <!--Modal window-->
     <div class="modal">
         <div class="modal_dialog">
             <div class="modal_content">
-                <h2>
-                    <span>Записаться</span> на ознакомительный вебинар
+                <div class="modal_close">
+                    <img src="images/modal_close.png" alt="close">
+                </div>
+                <h2 class="header_form">
+                    <span>Записаться</span> на <br> ознакомительный вебинар
                 </h2>
                 <form class="modal_form" action="#">
-
+                    <div class="group_name">
+                        <label for="fullName" class="label_name">Ваше ФИО:</label>
+                        <div class="gradient">
+                            <input type="text" class="input_name" name="fullName" required>
+                        </div>
+                    </div>
+                    <div class="group_phone">
+                        <label for="phone" class="label_phone">Номер телефона:</label>
+                        <input type="tel" class="input_phone" name="phone" required>
+                    </div>
+                    <div class="group_email">
+                        <label for="email" class="label_email" required>Ваш e-mail:</label>
+                        <input type="email" class="input_email" name="email">
+                    </div>
+                    <div class="form_button">
+                        <button>Записаться</button>
+                    </div>
                 </form>
             </div>
         </div>
