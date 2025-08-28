@@ -86,3 +86,42 @@
         box-shadow: 10px 0px 30px -5px #00E0FF;
     }
 }
+
+// Modal window
+@mixin label {
+    display: block;
+    font-weight: 500;
+    font-size: 13px;
+    color: $labelForm;
+    letter-spacing: 1.3px;
+    margin-bottom: 10px;
+}
+@mixin gradient {
+    display: inline-block;
+    padding: 2px;
+    border-radius: 9px;
+    background: linear-gradient(to right, #1F4D60 43%, #49B9E8 100%);
+    width: 100%;
+}
+@mixin input {
+    width: 100%;
+    height: 56px;
+    border: none;
+    border-radius: 7px;
+    padding: 10px 15px;
+    font-size: 16px;
+    outline: none;
+    color: #000;
+    background: linear-gradient(
+        to left,
+        rgba(3, 57, 88, 0.6) 0%,
+        rgba(15, 107, 120, 0.6) 100%
+    );
+    box-sizing: border-box;
+}
+@mixin inputTypeText {
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    color: $white;
+}

@@ -13,12 +13,12 @@
     .modal_dialog {
         margin: 150px auto;
         width: 500px;
-        height: 500px;
+        height: 550px;
         border-radius: 20px;
         background: linear-gradient(to left, #033958 0%, #0F6B78 100%);
 
         .modal_content {
-            padding: 33px 0 0 28px;
+            padding: 33px 28px 0 28px;
             position: relative;
 
             .modal_close {
@@ -41,34 +41,80 @@
 
                 .group_name {
                     .label_name {
-                        display: block;
-                        font-weight: 500;
-                        font-size: 13px;
-                        color: $labelForm;
-                        letter-spacing: 1.3px;
+                        @include label;
                     }
                     .gradient {
-                        display: inline-block;
-                        padding: 2px;
-                        border-radius: 9px;
-                        background: linear-gradient(to right, #1F4D60 43%, #49B9E8 100%);
+                        @include gradient;
 
                         .input_name {
-                            width: 243px;
-                            height: 56px;
-                            border: none;
-                            border-radius: 7px;
-                            padding: 10px 15px;
-                            font-size: 16px;
-                            outline: none;
-                            color: #000;
-                            background: linear-gradient(
-                                to left,
-                                rgba(3, 57, 88, 0.6) 0%,
-                                rgba(15, 107, 120, 0.6) 100%
-                            );
+                            @include input;
+                        }
+                        input[type="text"] {
+                            @include inputTypeText;
+                        }
+                    }
+                }
+                .group_phone {
+                    margin-top: 20px;
+                    .label_phone {
+                        @include label;
+                    }
+                    .gradient {
+                        @include gradient;
 
-                            box-sizing: border-box;
+                        .input_phone {
+                            @include input;
+                        }
+                        input[type="tel"] {
+                            @include inputTypeText;
+                        }
+                    }
+                }
+                .group_email {
+                    margin-top: 20px;
+
+                    .label_email {
+                        @include label;
+                    }
+                    .gradient {
+                        @include gradient;
+
+                        .input_email {
+                            @include input;
+                        }
+                        input[type="email"] {
+                            @include inputTypeText;
+                        }
+                    }
+                }
+                .form_button {
+                    display: flex;
+                    justify-content: center;
+                    margin: 33px auto;
+
+                    button {
+                        width: 247px;
+                        height: 60px;
+                        font-size: 12px;
+                        color: white;
+                        text-transform: uppercase;
+                        font-weight: 700;
+                        letter-spacing: 2.5px;
+                        border-radius: 8px;
+                        background: linear-gradient(
+                                180deg,
+                                #03E1FF 66%,
+                                #13CDC2 100%
+                            );
+                        box-shadow: 7px 0px 20px -7px #00E0FF;
+                        border: none;
+                        cursor: pointer;
+                        transition: all 1s;
+
+                        &:hover {
+                            transition: all 1s;
+                            transform: translateY(-5px);
+                            box-shadow: 10px 0px 30px -5px #00E0FF;
                         }
                     }
                 }
