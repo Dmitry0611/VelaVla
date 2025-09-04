@@ -43,3 +43,17 @@ img {
 .open {
   opacity: 1;
 }
+
+
+// Modal
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+body.modal_open {
+    overflow: hidden;
+}
