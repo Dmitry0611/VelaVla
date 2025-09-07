@@ -98,19 +98,25 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const buttons = document.querySelectorAll('.modal-open');
     const modal = document.querySelector('.modal');
-    const modalContent = document.querySelector('.modal-content');
+    const modalDialog = document.querySelector('.modal_dialog');
     const modalClose = document.querySelector('.modal_close');
-    const timer = setTimeout(openModal,2000);
 
     function openModal() {
-      modal.classList.add('show');
-      document.body.classList.add('modal_open');
-      clearTimeout(timer);
+      setTimeout(() => {
+        modal.classList.add('show');
+        modal.classList.remove('hide');
+        modalDialog.classList.add('fade-in');
+        document.body.classList.add('modal_open');
+        //document.documentElement.classList.add('modal_open');
+      }, 500);
     };
 
     function closeModal() {
       modal.classList.remove('show');
+      modal.classList.add('hide');
+      modalDialog.classList.remove('fade-in');
       document.body.classList.remove('modal_open');
+      //document.documentElement.classList.remove('modal_open');
     };
 
     buttons.forEach(btn => {

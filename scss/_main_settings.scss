@@ -46,14 +46,10 @@ img {
 
 
 // Modal
-.hide {
-  display: none;
-}
 
-.show {
-  display: block;
-}
-
+html.modal_open,
 body.modal_open {
-    overflow: hidden;
+  overflow: hidden !important;
+  height: 100%;
 }
+

@@ -35,7 +35,7 @@
 
                 </div>
                 <div class="header_button">
-                    <button class="open-modal">Записать на ознакомительный вебинар</button>
+                    <button class="modal-open">Записать на ознакомительный вебинар</button>
                 </div>
             </div>
         </div>
@@ -145,7 +145,7 @@
                     </div>
                 </div>
                 <div class="intelligence_button">
-                    <button class="open-modal">Записаться на ознакомительный вебинар</button>
+                    <button class="modal-open">Записаться на ознакомительный вебинар</button>
                 </div>
             </div>
         </div>
@@ -256,7 +256,7 @@
                         </div>
                     </div>
                     <div class="learning_button">
-                        <button class="open-modal">Записаться на ознакомительный семинар</button>
+                        <button class="modal-open">Записаться на ознакомительный семинар</button>
                     </div>
                 </div>
                 <div class="learning_right">
@@ -656,23 +656,23 @@
                 <h2 class="header_form">
                     <span>Записаться</span> на <br> ознакомительный вебинар
                 </h2>
-                <form class="modal_form" action="#">
+                <form class="modal_form" action="#" autocomplete="on">
                     <div class="group_name">
                         <label for="fullName" class="label_name">Ваше ФИО:</label>
                         <div class="gradient">
-                            <input type="text" class="input_name" name="fullName" required>
+                            <input type="text" class="input_name" name="fullName" id="fullName" required>
                         </div>
                     </div>
                     <div class="group_phone">
                         <label for="phone" class="label_phone">Номер телефона:</label>
                         <div class="gradient">
-                            <input type="tel" class="input_phone" name="phone" required>
+                            <input type="tel" class="input_phone" name="phone" id="phone" required>
                         </div>
                     </div>
                     <div class="group_email">
                         <label for="email" class="label_email" required>Ваш e-mail:</label>
                         <div class="gradient">
-                            <input type="email" class="input_email" name="email">
+                            <input type="email" id="email" class="input_email" name="email">
                         </div>
                     </div>
                     <div class="form_button">

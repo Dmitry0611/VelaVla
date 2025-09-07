@@ -8,6 +8,14 @@
     overflow: hidden;
     z-index: 1000;
     background: rgba(8, 38, 43, 0.5);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease;
+
+    &.show {
+        opacity: 1;
+        pointer-events: auto;
+    }
 
 
     .modal_dialog {
@@ -16,6 +24,14 @@
         height: 550px;
         border-radius: 20px;
         background: linear-gradient(to left, #033958 0%, #0F6B78 100%);
+        transform: translateY(-50px);
+        opacity: 0;
+        transition: transform 0.5s ease, opacity 0.5s ease;
+
+        &.fade-in {
+            transform: translateY(0);
+            opacity: 1;
+        }
 
         .modal_content {
             padding: 33px 28px 0 28px;
