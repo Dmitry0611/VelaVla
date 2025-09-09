@@ -46,10 +46,26 @@ img {
 
 
 // Modal
-
 html.modal_open,
 body.modal_open {
   overflow: hidden !important;
-  height: 100%;
+}
+
+
+// Animation scroll
+.scroll {
+  opacity: 0;
+  transform: translateY(60px);
+
+  &.block_show {
+    animation: fadeInUp 1s forwards;
+  }
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 

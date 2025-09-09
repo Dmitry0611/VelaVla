@@ -107,7 +107,7 @@ document.addEventListener("DOMContentLoaded", () => {
         modal.classList.remove('hide');
         modalDialog.classList.add('fade-in');
         document.body.classList.add('modal_open');
-        //document.documentElement.classList.add('modal_open');
+        document.documentElement.classList.add('modal_open');
       }, 500);
     };
 
@@ -116,7 +116,7 @@ document.addEventListener("DOMContentLoaded", () => {
       modal.classList.add('hide');
       modalDialog.classList.remove('fade-in');
       document.body.classList.remove('modal_open');
-      //document.documentElement.classList.remove('modal_open');
+      document.documentElement.classList.remove('modal_open');
     };
 
     buttons.forEach(btn => {
@@ -138,4 +138,24 @@ document.addEventListener("DOMContentLoaded", () => {
         closeModal();
       }
     });
+
+
+
+    // Animation scroll
+
+    const blocks = document.querySelectorAll('.scroll');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry, index) => {
+        if (entry.isIntersecting) {
+          entry.target.style.animationDelay = `${index * 1}s`;
+          entry.target.classList.add('block_show');
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+  {
+    threshold: 0.4
+  });
+
+  blocks.forEach(block => observer.observe(block));
 });
