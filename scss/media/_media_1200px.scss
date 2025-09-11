@@ -1,0 +1,102 @@
+@media (max-width: 1200px) {
+
+    //Header block
+    header {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    //Reasons block
+    .reasons {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    //Intelligence block
+    .intelligence {
+        padding-left: 20px;
+    }
+
+    //Important block
+    .important {
+        padding-left: 20px;
+        padding-right: 20px;
+        .container {
+            .important_second_line {
+                .important_second_info {
+                    padding-left: 25px;
+                    padding-right: 50px;
+                }
+            }
+        }
+    }
+
+    //Learning block
+    .learning {
+        padding-left: 20px;
+    }
+
+    //Courses block
+    .courses {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    //Course_author block
+    .course_autor {
+        padding-left: 20px;
+        .container {
+            .course_autor_flex {
+                .course_autor_left {
+                    width: 54%;
+                }
+            }
+        }
+    }
+
+    //School_announcements block
+    .school {
+        padding-left: 20px;
+        padding-right: 20px;
+        .container {
+            .slider {
+                .prev {
+                    left: 185px;
+                }
+                .slider_window {
+                    width: 70%;
+                    margin: 0 auto;
+                }
+                .next {
+                    right: 203px;
+                }
+            }
+        }
+    }
+
+    //Vacancies block
+    .vacancies {
+        padding-left: 20px;
+        padding-right: 20px;
+        .container {
+            .slider {
+                .prev {
+                    left: 185px;
+                }
+                .slider_window {
+                    width: 70%;
+                    margin: 0 auto;
+                }
+                .next {
+                    right: 203px;
+                }
+            }
+        }
+    }
+
+    //Footer block
+    footer {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
