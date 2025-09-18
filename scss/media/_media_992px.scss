@@ -1,0 +1,69 @@
+@media (max-width: 992px) {
+
+    //Reasons block
+    .reasons {
+        padding-top: 90px;
+        .container {
+            h2 {
+                font-size: 40px;
+                padding-bottom: 30px;
+                span {
+                    font-size: 40px;
+                }
+            }
+            .reasons_cards {
+                .reasons_cards_first_line {
+                    flex-wrap: wrap;
+                    gap: 30px;
+                    .card_first_line {
+                         flex: 1 1 calc(50% - 20px);
+                         margin-top: 0px;
+                    }
+                }
+                .reasons_cards_second_line {
+                    flex-wrap: wrap;
+                    gap: 30px;
+                    .cards_second_line {
+                        flex: 1 1 calc(50% - 20px);
+                         margin-top: 0px;
+                    }
+                }
+            }
+        }
+    }
+
+    //Intelligence block
+    .intelligence {
+        padding-top: 90px;
+        .container {
+            h2 {
+                font-size: 40px;
+                span {
+                    font-size: 40px;
+                }
+            }
+        }
+    }
+
+    //Important block
+    .important {
+        padding-top: 90px;
+        .container {
+            h2 {
+                font-size: 40px;
+                span {
+                    font-size: 40px;
+                }
+            }
+            .important_first_line {
+                display: block;
+            }
+            .important_second_line {
+                display: block;
+                .img_padding {
+                    padding-left: 16px;
+                }
+            }
+        }
+    }
+}
