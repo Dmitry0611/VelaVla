@@ -1,5 +1,10 @@
 @media (max-width: 992px) {
 
+    //Header block
+    header {
+        padding-bottom: 90px;
+    }
+
     //Reasons block
     .reasons {
         padding-top: 90px;
@@ -48,6 +53,7 @@
     //Important block
     .important {
         padding-top: 90px;
+        padding-bottom: 90px;
         .container {
             h2 {
                 font-size: 40px;
@@ -56,12 +62,85 @@
                 }
             }
             .important_first_line {
-                display: block;
+                justify-content: center;
+                .important_first_info {
+                    .info_first {
+                        display: block;
+                        padding-left: 39px;
+                    }
+                }
             }
             .important_second_line {
-                display: block;
+                justify-content: center;
+                .important_second_info {
+                    .info_second {
+                        flex-direction: column;
+                        img {
+                            order: 1;
+                            width: 285px;
+                            height: 217px;
+                        }
+                        .info_text {
+                            order: 2;
+                            padding-top: 20px;
+                            padding-left: 38px;
+                        }
+                    }
+                }
                 .img_padding {
                     padding-left: 16px;
+                }
+            }
+        }
+    }
+
+    //Learning block
+    .learning {
+        padding-bottom: 90px;
+        .container {
+            .learning_left {
+                h2 {
+                    font-size: 40px;
+                    span {
+                        font-size: 40px;
+                    }
+                }
+            }
+        }
+    }
+
+    //Courses block
+    .courses {
+        padding-bottom: 90px;
+        .container {
+            h2 {
+                font-size: 40px;
+                span {
+                    font-size: 40px;
+                }
+            }
+        }
+    }
+
+    //Course_author block
+    .course_autor {
+        padding-top: 105px;
+        .container {
+            .autor_title {
+                font-size: 40px;
+            }
+            .course_autor_flex {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .course_autor_left {
+                    padding-top: 0px;
+                }
+                .course_autor_right {
+                    .name_autor {
+                        bottom: 4%;
+                        right: 35%;
+                    }
                 }
             }
         }

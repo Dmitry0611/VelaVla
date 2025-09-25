@@ -22,20 +22,19 @@
     }
 
     .container {
-        .course_autor_flex {
-            display: flex;
-
-            .course_autor_left {
-                padding-top: 100px;
-                width: 50%;
-
-                .autor_title {
+        .autor_title {
                     padding-bottom: 40px;
                     font-size: 54px;
                     font-weight: 500;
                     color: $white;
                     text-transform: uppercase;
                 }
+        .course_autor_flex {
+            display: flex;
+
+            .course_autor_left {
+                padding-top: 100px;
+                width: 50%;
                 .autor_text {
                     font-weight: 500;
                     font-size: 15px;
