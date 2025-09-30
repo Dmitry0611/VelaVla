@@ -145,4 +145,47 @@
             }
         }
     }
+
+    //School_announcements block
+    .school {
+        padding-top: 90px;
+        .container {
+            .school_flex {
+                h2 {
+                    font-size: 40px;
+                }
+            }
+            .slider {
+                .slider_window {
+                    .cards_container {
+                        .card {
+                            flex: 0 0 calc(100% / 2);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    //Vacancies block
+    .vacancies {
+        padding-top: 90px;
+        .container {
+            .vacancies_flex {
+                h2 {
+                      font-size: 40px;
+                }
+            }
+            .slider {
+                .slider_window {
+                    .cards_container {
+                        .card {
+                            width: 320px;
+                            flex: 0 0 320px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

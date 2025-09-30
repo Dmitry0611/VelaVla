@@ -74,14 +74,13 @@
                 box-sizing: border-box;
                 .cards_container {
                     display: flex;
+                    gap: 20px;
                     max-width: 1200px;
                     transition: transform 0.5s ease;
                     will-change: transform;
                 .card {
                     position: relative;
-                    width: 387px;
-                    flex: 0 0 387px;
-                    margin-right: 20px;
+                    flex: 0 0 calc(100% / 3);
 
                     &:last-child {
                         margin-right: 0;
