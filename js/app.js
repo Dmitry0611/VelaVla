@@ -37,20 +37,21 @@ document.addEventListener("DOMContentLoaded", () => {
     const prev = slider.querySelector('.prev');
     const next = slider.querySelector('.next');
     const container = slider.querySelector('.cards_container');
+    const sliderWindow = slider.querySelector('.slider_window');
     const originalCards = Array.from(container.children);
 
     let visibleCards;
-    let cardWidth;
-    let totalCardWidth;
     let currentIndex;
     let isAnimating = false;
+    let gap = 0;
+    let cardExactWidth = 0;
 
     const createClones = () => {
         container.innerHTML = '';
         const clonesBefore = originalCards.slice(-visibleCards).map(c => c.cloneNode(true));
         const clonesAfter = originalCards.slice(0, visibleCards).map(c => c.cloneNode(true));
         [...clonesBefore, ...originalCards, ...clonesAfter].forEach(c => container.appendChild(c));
-    };
+      };
 
     const updateSettings = () => {
         const width = window.innerWidth;
@@ -66,23 +67,28 @@ document.addEventListener("DOMContentLoaded", () => {
         createClones();
 
         const style = window.getComputedStyle(container);
-        const gap = parseFloat(style.gap || style.columnGap || 0);
+        gap = parseFloat(style.gap || style.columnGap || 0);
 
-        cardWidth = container.querySelector('.card').offsetWidth;
-        totalCardWidth = cardWidth + gap;
+        const containerWidth = sliderWindow.offsetWidth;
+
+        cardExactWidth = (containerWidth - gap * (visibleCards - 1)) / visibleCards;
+
+        container.querySelectorAll('.card').forEach(card => {
+            card.style.flex = `0 0 ${cardExactWidth}px`;
+        });
 
         currentIndex = visibleCards;
         container.style.transition = 'none';
-        container.style.transform = `translateX(-${currentIndex * totalCardWidth}px)`;
-    };
+        container.style.transform = `translateX(-${currentIndex * (cardExactWidth + gap)}px)`;
+      };
 
     const moveTo = (direction) => {
         if (isAnimating) return;
         isAnimating = true;
         currentIndex += direction;
         container.style.transition = 'transform 0.5s ease';
-        container.style.transform = `translateX(-${currentIndex * totalCardWidth}px)`;
-    };
+        container.style.transform = `translateX(-${currentIndex * (cardExactWidth + gap)}px)`;
+      };
 
     const handleTransitionEnd = () => {
         const totalOriginal = originalCards.length;
@@ -94,17 +100,17 @@ document.addEventListener("DOMContentLoaded", () => {
             currentIndex = totalOriginal + visibleCards - 1;
         }
 
-        container.style.transform = `translateX(-${currentIndex * totalCardWidth}px)`;
+        container.style.transform = `translateX(-${currentIndex * (cardExactWidth + gap)}px)`;
         isAnimating = false;
-    };
+      };
 
-    next.addEventListener('click', () => moveTo(1));
-    prev.addEventListener('click', () => moveTo(-1));
-    container.addEventListener('transitionend', handleTransitionEnd);
+      next.addEventListener('click', () => moveTo(1));
+      prev.addEventListener('click', () => moveTo(-1));
+      container.addEventListener('transitionend', handleTransitionEnd);
 
-    window.addEventListener('resize', updateSettings);
-    window.addEventListener('load', updateSettings);
-});
+      window.addEventListener('resize', updateSettings);
+      window.addEventListener('load', updateSettings);
+    });
 
 
 
